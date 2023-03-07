@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
+  m_Name: PhotonServerSettings
+  m_EditorClassIdentifier: 
+  AppSettings:
+    AppIdRealtime: 9ccc19fa-0451-4994-9572-ba6281111a8e
+    AppIdFusion: 
+    AppIdChat: 
+    AppIdVoice: 
+    AppVersion: 
+    UseNameServer: 1
+    FixedRegion: 
+    Server: 
+    Port: 0
+    ProxyServer: 
+    Protocol: 0
+    EnableProtocolFallback: 1
+    AuthMode: 0
+    EnableLobbyStatistics: 0
+    NetworkLogging: 1
+  DevRegion: kr
+  PunLogging: 0
+  EnableSupportLogger: 0
+  RunInBackground: 1
+  StartInOfflineMode: 0
+  RpcList:
+  - ClickRpc
+  - DestroyRpc
+  - DestroySpaceship
+  - Fire
+  - RespawnSpaceship
+  - setPlayer
+  - PUN_RoundStart
+  - PUN_StartIntro
+  - endRound
+  - PUN_StartFadeout
+  - PUN_StartRound
+  - changeResult
+  - setPlayerName
+  - PUN_ChangeKeyCount
+  - setUserInfo
+  - PUN_SetPlayer1
+  - PUN_SetPlayer2
+  - PUN_Player1BettingID
+  - PUN_Player1Nickname
+  - PUN_Player1PlayerID
+  - PUN_Player1SessionID
+  - PUN_Player2BettingID
+  - PUN_Player2Nickname
+  - PUN_Player2PlayerID
+  - PUN_Player2SessionID
+  - MakeBat
+  - PUN_EndBet
+  - PUN_BettingID
+  - PUN_PlayerSetAnim
+  - PUN_Player1SetAnim
+  - PUN_Player2SetAnim
+  - PUN_SetAnim
+  - PUN_SetOpponentBtn
+  - PUN_SetOpponentBtnIndex
+  - setWhoWin
+  - PUN_Attack
+  - PUN_ChangeGame
+  - changeResult_ACCARROW
+  - changeResult_RAPID
+  - PUN_SetOpponentGauge
+  - changeResult_TIMING
+  - PUN_Idle
+  - PUN_ArrowDown
+  - PUN_ArrowLeft
+  - PUN_ArrowRight
+  - PUN_ArrowUp
+  - showSlashEffect
+  - PUN_ToglePlayerCursor
+  - PUN_showRound
+  DisableAutoOpenWizard: 1
+  ShowSettings: 0
+  DevRegionSetOnce: 1
