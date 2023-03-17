@@ -21,7 +21,7 @@ public class StartSceneManager : MonoBehaviourPunCallbacks
     [SerializeField] GameObject quickStartBtn;
     [SerializeField] GameObject quickCancleBtn;
 
-    public Text surverStatusText;
+   // public Text surverStatusText;
 
     //public Text NameText;
     public TextMesh nameTextMesh;
@@ -115,7 +115,7 @@ public class StartSceneManager : MonoBehaviourPunCallbacks
         }
         else if(id == 1)
         {
-            loginBtn.SetActive(false);
+            ///loginBtn.SetActive(false);
             quickStartBtn.SetActive(true);
             quickCancleBtn.SetActive(false);
 
@@ -128,7 +128,7 @@ public class StartSceneManager : MonoBehaviourPunCallbacks
         }
         else if(id == 2)
         {
-            loginBtn.SetActive(false);
+            //loginBtn.SetActive(false);
             quickStartBtn.SetActive(false);
             quickCancleBtn.SetActive(true);
 
@@ -143,7 +143,7 @@ public class StartSceneManager : MonoBehaviourPunCallbacks
         }
         else
         {
-            loginBtn.SetActive(false);
+            //loginBtn.SetActive(false);
             quickStartBtn.SetActive(false);
             quickCancleBtn.SetActive(false);
 
@@ -156,7 +156,7 @@ public class StartSceneManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         PhotonNetwork.AutomaticallySyncScene = true;
-        surverStatusText.text = "connected to master surver";
+     //   surverStatusText.text = "connected to master surver";
 
         changeBtnStatus(1);
         ScreenON();
@@ -180,7 +180,7 @@ public class StartSceneManager : MonoBehaviourPunCallbacks
     /// <param name="message"></param>
     public override void OnJoinRandomFailed(short returnCode, string message)
     {
-        surverStatusText.text = "failed to join room";
+      //  surverStatusText.text = "failed to join room";
         CreateRoom();
     }
 
@@ -201,7 +201,7 @@ public class StartSceneManager : MonoBehaviourPunCallbacks
     public void CreateRoom()
     {
       //  Debug.Log("creating room now ");
-        surverStatusText.text = "waiting for other player";
+       // surverStatusText.text = "waiting for other player";
 
 
         int randomRoomNumber = Random.Range(1, 10000);
@@ -218,7 +218,7 @@ public class StartSceneManager : MonoBehaviourPunCallbacks
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
         Debug.Log("failed to create room .. trying again");
-        surverStatusText.text = "failed to create room .. trying again";
+       // surverStatusText.text = "failed to create room .. trying again";
         CreateRoom();
     }
 

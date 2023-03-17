@@ -159,9 +159,10 @@ public class GameManager : MonoBehaviourPun
         StartCoroutine(CO_Intro());
     }
 
+    public Image introPanel;
     IEnumerator CO_Intro()
     {
-        fadeoutPanel.color = new Color(0, 0, 0, 0.6f);
+        introPanel.color = new Color(0, 0, 0, 0.6f);
 
         yield return new WaitForSeconds(0.8f);
 
@@ -180,7 +181,7 @@ public class GameManager : MonoBehaviourPun
         Destroy(introAnim.gameObject);
 
 
-        fadeoutPanel.color = Color.clear;
+        introPanel.color = Color.clear;
         StartCoroutine(CO_CreateHeart());
 
 
