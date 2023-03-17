@@ -19,11 +19,11 @@ public class Portrait : MonoBehaviour
     public void setTextPlayer1(string name)
     {
         player1Text.text = name;
-        player1Text.GetComponent<MeshRenderer>().sortingLayerName = "UI";
+        player1Text.GetComponent<MeshRenderer>().sortingLayerName = "Arcade Machine";
         player1Text.GetComponent<MeshRenderer>().sortingOrder = 7;
 
         player1HPName.text = name;
-        player1HPName.GetComponent<MeshRenderer>().sortingLayerName = "UI";
+        player1HPName.GetComponent<MeshRenderer>().sortingLayerName = "Arcade Machine";
         player1HPName.GetComponent<MeshRenderer>().sortingOrder =2;
 
         Debug.Log("SETPLAYERNAME1" + name);
@@ -32,11 +32,11 @@ public class Portrait : MonoBehaviour
     public void setTextPlayer2(string name)
     {
         player2Text.text = name;
-        player2Text.GetComponent<MeshRenderer>().sortingLayerName = "UI";
+        player2Text.GetComponent<MeshRenderer>().sortingLayerName = "Arcade Machine";
         player2Text.GetComponent<MeshRenderer>().sortingOrder = 7;
 
         player2HPName.text = name;
-        player2HPName.GetComponent<MeshRenderer>().sortingLayerName = "UI";
+        player2HPName.GetComponent<MeshRenderer>().sortingLayerName = "Arcade Machine";
         player2HPName.GetComponent<MeshRenderer>().sortingOrder = 2;
 
         Debug.Log("SETPLAYERNAME2" + name);
